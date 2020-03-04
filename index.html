@@ -1,44 +1,120 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-	<title>Dominik Babiński</title>
+    <title>Dominik Babiński</title>
 
-	<link rel="icon" href="favicon.ico" type="image/png" />
+    <link rel="icon" href="favicon.ico" type="image/png" />
 
-	<link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
-	<link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/reset.css">
-	<link rel="stylesheet" href="css/styles.css">
-	<!-- <link rel="stylesheet" href="css/themes/indigo-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/green-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/red-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/grey-white.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/white-indigo.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/white-blue.css"> -->
-	 <link rel="stylesheet" href="css/themes/white-grey.css"> 
-	<!-- <link rel="stylesheet" href="css/themes/white-red.css"> -->
-	<!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Reem+Kufi|Roboto:300" rel="stylesheet">
+    <link href="https://use.fontawesome.com/releases/v5.12.0/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- <link rel="stylesheet" href="css/themes/indigo-white.css"> -->
+    <!-- <link rel="stylesheet" href="css/themes/green-white.css"> -->
+    <!-- <link rel="stylesheet" href="css/themes/red-white.css"> -->
+    <!-- <link rel="stylesheet" href="css/themes/grey-white.css"> -->
+    <!-- <link rel="stylesheet" href="css/themes/white-indigo.css"> -->
+    <!-- <link rel="stylesheet" href="css/themes/white-blue.css"> -->
+    <link rel="stylesheet" href="css/themes/white-grey.css">
+    <!-- <link rel="stylesheet" href="css/themes/white-red.css"> -->
+    <style>
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 4px;
+        }
+        /* Create four equal columns that sits next to each other */
+        
+        .column {
+            flex: 25%;
+            max-width: 25%;
+            padding: 0 4px;
+        }
+        
+        .column img {
+            margin-top: 8px;
+            vertical-align: middle;
+            width: 100%;
+        }
+        /* Responsive layout - makes a two column-layout instead of four columns */
+        
+        @media screen and (max-width: 800px) {
+            .column {
+                flex: 50%;
+                max-width: 50%;
+            }
+        }
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        
+        @media screen and (max-width: 600px) {
+            .column {
+                flex: 100%;
+                max-width: 100%;
+            }
+        }
+    </style>
+    <!-- <link rel="stylesheet" href="css/themes/yellow-black.css"> -->
 </head>
+
 <body>
-	<main>
-		<div class="intro">Hello, I'm Dominik!</div>
-		<div class="tagline">Game Dev | Morning coder | Musician | Speedrunner </div>
-		<!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
-		<div class="icons-social">
-			<a target="_blank" href="https://github.com/fractialcopper"><i class="fab fa-github"></i></a>
-			<a target="_blank" href="https://twitter.com/aleflushed"><i class="fab fa-twitter"></i></a>
-			<a target="_blank" href="https://www.youtube.com/channel/UCAMYQFlqhFnakv8NO1EAtqw"><i class="fab fa-youtube"></i></a>			
-			<a target="_blank" href="https://www.linkedin.com/in/dominik-babi%C5%84ski-52718b1a3/"><i class="fab fa-linkedin"></i></a>		
-	</main>
-		<div>
-		
-		
-		
-		</div>	
-		
+    <main>
+        <div class="intro">Hello, I'm Dominik!</div>
+        <div class="tagline">Game Dev | Morning coder | Musician | Speedrunner </div>
+        <!-- Find your icons from here - https://fontawesome.com/icons?d=gallery&s=brands -->
+        <div class="icons-social">
+            <a target="_blank" href="https://github.com/fractialcopper"><i class="fab fa-github"></i></a>
+            <a target="_blank" href="https://twitter.com/aleflushed"><i class="fab fa-twitter"></i></a>
+            <a target="_blank" href="https://www.youtube.com/channel/UCAMYQFlqhFnakv8NO1EAtqw"><i class="fab fa-youtube"></i></a>
+            <a target="_blank" href="https://www.linkedin.com/in/dominik-babi%C5%84ski-52718b1a3/"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="tagline"> Projects:</div>
+        <div class="row">
+            <div class="column">
+                SetSail - Procedurally Generated Game (Unity)
+                <a href="clinic.html">
+                    <img src="images/Setsail.png" alt="Projekt przychodni" height="250" width="250"></img>
+                </a>
+
+                Clinic system project (Spring+Hibernate)
+                <a href="clinic.html">
+                    <img src="images/Przychodnia_preview.png" alt="Projekt przychodni" height="250" width="250"></img>
+                </a>
+
+                Traveling Thief Problem (Genetic Algorithm)
+                <a href="TTP.html">
+                    <img src="images/Edugate.png" alt="Projekt portalu edukacyjnego"></img>
+                </a>
+            </div>
+            <div class="column">
+                Edugate (Spring+Hibernate)
+                <a href="edugate.html">
+                    <img src="images/Edugate.png" alt="Projekt portalu edukacyjnego"></img>
+                </a>
+
+                Diet/Workout Tracking (Android + RoomDB)
+                <a href="room.html">
+                    <img src="images/Room.png" alt="Projekt przychodni" width="200px" height="400px"></img>
+                </a>
+            </div>
+            <div class="column">
+
+            </div>
+            <div class="column">
+
+            </div>
+        </div>
+
+
+        </div>
+
+    </main>
+
+
 </body>
+
 </html>
