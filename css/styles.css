@@ -4,6 +4,12 @@ html {
 	font-family: 'Roboto', sans-serif;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;  
+}
+
 @media (min-width: 576px) {
 	html {
 		font-size: 14px;
