@@ -95,7 +95,9 @@ analytics:
 author:
   name             : "Dominik Babiński"
   avatar           : "/assets/images/linkedin_profile_image.jfif"
-  bio              : "Game developer with passion to audio and game design. \n Currently working on melee combat boss fights game. (isometric 2d) \n About to finish my MSc degree in Computer Science."
+  bio              : "Game developer with passion to audio and game design.\n Currently working on melee combat boss fights game.
+  
+  \n About to finish my MSc degree in Computer Science."
   location         : "Wrocław, Poland"
   # email            : dominik.i.babinski@gmail.com
   links:
