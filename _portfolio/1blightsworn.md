@@ -1,6 +1,6 @@
 ---
 title: "Blightsworn"
-excerpt: "Boss fight centetered game focused on melee combat and proper timing."
+excerpt: "Boss fight-centric game focused on melee combat and proper timing."
 header:
   image: /assets/images/blightsworn_banner.png
   teaser: /assets/images/blightsworn_profile.png
