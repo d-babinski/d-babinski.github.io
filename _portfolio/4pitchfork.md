@@ -36,7 +36,7 @@ During the development we've managed to:
 - design precisely all of the intended mechanics
 - implement most of minigames
 - use xml structure for feeding the content
-- implement procedural audio relative to the gamestate (popu ps appearing and some types of pop ups create additional melody of soundtrack)
+- implement procedural audio relative to the gamestate (pop ups appearing and some types of pop ups create additional melody of soundtrack)
 - finish the art part of the game really early
 
 What have not worked for us:

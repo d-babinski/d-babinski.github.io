@@ -40,7 +40,7 @@ As per usual, what has been done:
 - procedural map generation on various sizes
 - fights worked well, were hard but not impossible
 - item progression with procedural items
-- event's giving various benefits (health, gold, items)
+- events giving various benefits (health, gold, items)
 - mobile controls worked pretty well
 - game was really fun to play
 

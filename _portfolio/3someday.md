@@ -34,7 +34,7 @@ This is game created for Weekly Game Jam with theme "Pilot". It's simple physics
 
 
 What we've managed to acomplish across about 24 hours:
-- working module interaction and building
+- working module interaction and vehicle construction
 - gameplay loop
 - simple procedural level generation
 
