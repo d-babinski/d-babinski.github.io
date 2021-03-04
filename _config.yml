@@ -12,15 +12,15 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Fractial Copper"
+title                    : "Dominik Babiński"
 title_separator          : "-"
-subtitle                 : "Dominik Babiński's blog and games" # site tagline that appears below site title in masthead
+subtitle                 : "Game developer" # site tagline that appears below site title in masthead
 name                     : "Dominik Babiński"
-description              : "My personal showcase and blog thoughts."
+description              : "Portfolio and blog"
 url                      : "https://fractialcopper.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -93,21 +93,21 @@ analytics:
 
 # Site Author
 author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
+  name             : "Dominik Babiński"
+  avatar           : "/assets/images/linkedin_profile_image.jfif"
+  bio              : "Game developer with passion to audio and game design. \n Currently working on melee combat boss fights game. (isometric 2d) \n About to finish my MSc degree in Computer Science."
+  location         : "Wrocław, Poland"
+  # email            : dominik.i.babinski@gmail.com
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
+      url: "mailto:dominik.i.babinski@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
+      #url: "https://twitter.com/aleflushed"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
       # url: "https://facebook.com/"
@@ -279,3 +279,19 @@ defaults:
       comments: # true
       share: true
       related: true
+
+defaults:
+  # _portfolio
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: false
+      share: true
+
+
+collections:
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
