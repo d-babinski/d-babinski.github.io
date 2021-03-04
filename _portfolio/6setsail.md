@@ -1,6 +1,6 @@
 ---
 title: "Set Sail"
-excerpt: "Boss fight centetered game focused on melee combat and proper timing."
+excerpt: "Turn based mobile game with procedural levels."
 header:
   image: /assets/images/setsail_banner.png
   teaser: /assets/images/setsail_profile.png

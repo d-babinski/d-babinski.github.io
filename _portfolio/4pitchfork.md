@@ -1,6 +1,6 @@
 ---
 title: "Pitchfork of Destiny"
-excerpt: "Boss fight centetered game focused on melee combat and proper timing."
+excerpt: "Popup clicker under the hood of RPG."
 header:
   image: /assets/images/pitchfork_banner.gif
   teaser: /assets/images/pitchfork_banner.gif
