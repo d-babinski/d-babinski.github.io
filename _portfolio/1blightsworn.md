@@ -26,7 +26,7 @@ gallery:
     alt: "gif 4"
 ---
 
-At the time of writing this is my current passion project which has been forming since over a year before transforming from rpg with several characters based on exploration to set of fights against bosses. Big influence came from the receivance of the first similar game - ["Ghoulash"](https://fractialcopper.github.io/portfolio/5ghoulash/) also mentioned in the portfolio. Main pillars of the gameplay are movement and timing and everything else in the game is aligned with that.
+At the time of writing this is my current passion project which has been forming since over a year before transforming from rpg with several characters based on exploration to set of fights against bosses. Big influence came from the receivance of the first similar game - [Ghoulash](https://fractialcopper.github.io/portfolio/5ghoulash/) also mentioned in the portfolio. Main pillars of the gameplay are movement and timing and everything else in the game is aligned with that.
 
 {% include gallery caption="Various gifs from the development. (click to maximize)" %}
 

@@ -25,7 +25,7 @@ gallery:
     alt: "gif 3" 
 ---
 
-This is game created for United Game Jam 2020 with theme "Two". The game is a duel against a boss that is made of two creatures. Jam contained mostly beginners (it only allowed people that didn't jam before) and a very active community. Out of 300 comissions Ghoulash has been 4th most played game with tens of reviews from fellow gamedevs. Usually to hard to beat on first time after few tries most of people were able to get through the fight which seems like well balanced design. 
+This is game created for United Game Jam 2020 with theme "Two". The game is a duel against a boss that is made of two creatures. Jam contained mostly beginners (it only allowed people that didn't jam before) and a very active community. Out of about 300 comissions Ghoulash has been 4th most played game with tens of reviews from fellow gamedevs. Usually too hard to beat on first time, after few tries most of people were able to get through the fight, which seems like well balanced design. 
 
 {% include gallery caption="Gifs showing the way gameplay works (click to maximize)" %}
 
@@ -42,4 +42,4 @@ What went wrong:
 - I've had many problems with tile grid and I haven't resolved it, just worked around
 
 
-Overall the jam was great and here's the game hosted on (itch.io)[https://flushedale.itch.io/goulash].
+Overall the jam was great and here's the game hosted on [itch.io](https://flushedale.itch.io/goulash).
