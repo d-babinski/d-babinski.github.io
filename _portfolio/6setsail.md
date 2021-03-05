@@ -34,7 +34,7 @@ gallery:
 This game was made as part of my engineering thesis and is focused on generating the levels in turn based mobile game. The game was well received by reviewers and actively debugged by some of my friends (there was not only theorycrafting about the game but speedrunning aswell).
 I've used perlin noise as a basis to do generation and I've set some rules so player could always reach it's destination on every map. The game contains simple combat (first player moves then enemies move) in which defense and offense stats are tested. There also items and stat-testing events aswell as gold for stat improvement.
 
-{% include gallery caption="Gifs showing the way gameplay works (click to maximize)" %}
+{% include gallery caption="Little gallery of the game (click to maximize)" %}
 
 As per usual, what has been done:
 - procedural map generation on various sizes
