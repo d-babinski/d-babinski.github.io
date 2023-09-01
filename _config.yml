@@ -229,11 +229,12 @@ whitelist:
   - jekyll-include-cache
 
 
+#forcing deploy
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
 #  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
+#  Path (examples) 
 #  - Archive page should exist at path when using Liquid method or you can
 #    expect broken links (especially with breadcrumbs enabled)
 #  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
