@@ -8,7 +8,9 @@ main:
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  - title: "Portfolio"
-    url: /
+  - title: "Portfolio" 
+    url: /portfolio/
+  - title: "Blog"
+    url: /blog/
   #- title: "About"
   #  url: /about/

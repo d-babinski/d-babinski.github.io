@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "personal" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -93,11 +93,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Dominik Babiński"
+  name             : "Dominik (FlushedAle) Babiński "
   avatar           : "/assets/images/linkedin_profile_image.jfif"
-  bio              : "Game developer with passion to audio and game design.\n Currently working on melee combat boss fights game.
-  
-  \n About to finish my MSc degree in Computer Science."
+  bio              : "CS graduate at Wrocław University of Science.\n\nI've been dabbing in gamedev since 2019, turned professional early 2021.\n Worked as generalist, from tool creation through gameplay to game systems, participated in game releases from start to finish.\n I love everything about audio programming.\nR&D is also one of my big passions.\n"
   location         : "Wrocław, Poland"
   # email            : dominik.i.babinski@gmail.com
   links:
