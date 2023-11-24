@@ -20,7 +20,7 @@ title                    : "Dominik Babiński"
 title_separator          : "-"
 subtitle                 : "Game developer" # site tagline that appears below site title in masthead
 name                     : "Dominik Babiński"
-description              : "Portfolio and blog"
+description              : "Portfolio site"
 url                      : "https://fractialcopper.github.io/" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -93,9 +93,9 @@ analytics:
 
 # Site Author
 author:
-  name             : "Dominik (FlushedAle) Babiński "
+  name             : "Dominik Babiński "
   avatar           : "/assets/images/linkedin_profile_image.jfif"
-  bio              : "CS graduate at Wrocław University of Science.\n\nI've been dabbing in gamedev since 2019, turned professional early 2021.\n Worked as generalist, from tool creation through gameplay to game systems, participated in game releases from start to finish.\n I love everything about audio programming.\nR&D is also one of my big passions.\n"
+  bio              : "CS graduate at Wrocław University of Science.\n\nBeen doing gamedev since 2019, turned professional early 2021.\n Worked as generalist, from tool creation through gameplay to game systems, participated in game releases from start to finish.\n I love everything about audio programming aswell as R&D.\n"
   location         : "Wrocław, Poland"
   # email            : dominik.i.babinski@gmail.com
   links:

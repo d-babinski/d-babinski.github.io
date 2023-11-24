@@ -1,10 +1,9 @@
 ---
 title: Portfolio
 layout: collection
-permalink: /portfolio/
+permalink: /
 collection: portfolio
 entries_layout: grid
 classes: wide
 author_profile: true
 ---
-
