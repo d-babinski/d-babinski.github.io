@@ -2,7 +2,6 @@
 title: "Fear Effect Reinvented"
 excerpt: "A remake of ps1 classic"
 header:
-  image: /assets/images/fear_banner.png
   teaser: /assets/images/fear_profile.png
 sidebar:
   - title: "Role"
