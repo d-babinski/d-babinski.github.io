@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 # remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "personal" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "dark" #"personal" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -112,7 +112,13 @@ analytics:
 author:
   name             : "Dominik Babiński "
   avatar           : "/assets/images/linkedin_profile_image.jfif"
-  bio              : "CS graduate at Wrocław University of Science.\n\nBeen doing gamedev since 2019, turned professional early 2021.\n Worked as generalist, from tool creation through gameplay to game systems, participated in game releases from start to finish.\n I love everything about audio programming aswell as R&D.\n"
+  bio              : "CS graduate at Wrocław University of Science.\n\n
+
+  Gamedev since 2019, professionaly since early 2021.\n
+
+  Generalist, made everything from tools through gameplay to game systems.\n
+
+  Love everything about audio programming and R&D."
   location         : "Wrocław, Poland"
   # email            : dominik.i.babinski@gmail.com
   links:
