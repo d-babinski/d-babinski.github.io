@@ -318,3 +318,9 @@ collections:
   portfolio:
     output: true
     permalink: /:collection/:path/
+  shaders:
+    output: true
+    permalink: /:collection/:path/
+  systems:
+    output: true
+    permalink: /:collection/:path/
