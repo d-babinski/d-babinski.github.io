@@ -1,6 +1,7 @@
 ---
 title: "Fear Effect Reinvented"
 layout: single
+date: "2024-04-15"
 excerpt: "3rd person puzzle FPS, commercialy at Megapixel Studio."
 header:
   teaser: /assets/images/fear_profile.png

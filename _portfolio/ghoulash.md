@@ -1,6 +1,7 @@
 ---
 title: "Ghoulash"
 excerpt: "Duel against possesed frog boss."
+date: "2020-06-30"
 header:
   image: /assets/images/ghoulash_banner3.png
   teaser: /assets/images/ghoulash_profile.png

@@ -112,13 +112,13 @@ analytics:
 author:
   name             : "Dominik Babiński "
   avatar           : "/assets/images/linkedin_profile_image.jfif"
-  bio              : "CS graduate at Wrocław University of Science.\n\n
+  bio              : "Computer Science graduate at Wrocław University of Science.\n\n
 
   Gamedev since 2019, professionaly since early 2021.\n
 
   Generalist, made everything from tools through gameplay to game systems.\n
-
-  Love everything about audio programming and R&D."
+  I have programmed in several technologies and pick up new ones very quickly.
+  Love everything about audio programming and research."
   location         : "Białystok, Poland"
   # email            : dominik.i.babinski@gmail.com
   links:
@@ -321,10 +321,18 @@ defaults:
     values:
       layout: single
       author_profile: false
-      readtime: true
       related: true
       share: true
-      
+    
+  #toolsandsystems
+  - scope:
+    path: ""
+    type: tools-and-systems
+  values:
+    layout: single
+    author_profile: false
+    related: true
+    share: true  
 
 
 
@@ -337,5 +345,8 @@ collections:
     output: true
     permalink: /:collection/:path/
   systems:
+    output: true
+    permalink: /:collection/:path/
+  tools-and-systems:
     output: true
     permalink: /:collection/:path/

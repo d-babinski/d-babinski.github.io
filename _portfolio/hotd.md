@@ -1,6 +1,7 @@
 ---
 title: "House of the Dead Remake"
 excerpt: "Arcade railshooter"
+date: "2023-03-15"
 header:
   teaser: /assets/images/hotd_profile.jpg
 sidebar:

@@ -1,6 +1,7 @@
 ---
 title: "Match of Matching"
 excerpt: "Crossplatform 1v1 jewel matching game."
+date: "2021-06-30"
 header:
   image: /assets/images/match_banner.png
   teaser: /assets/images/match_profile.png

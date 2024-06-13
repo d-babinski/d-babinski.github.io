@@ -1,6 +1,7 @@
 ---
 title: "Set Sail"
 excerpt: "Turn based mobile game with procedural levels."
+date: "2019-12-31"
 header:
   image: /assets/images/setsail_banner.png
   teaser: /assets/images/setsail_profile.png

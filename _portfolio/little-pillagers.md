@@ -1,6 +1,7 @@
 ---
 title: "Little pillagers"
 excerpt: "Simple proof of concept strategy game (repository included)"
+date: "2024-03-31"
 header:
   teaser: /assets/images/pillagers_profile.png
 sidebar:

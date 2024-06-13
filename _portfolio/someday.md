@@ -1,6 +1,7 @@
 ---
 title: "Some day we'll fly"
 excerpt: "Vehicle building game about reaching the stars."
+date: "2021-03-15"
 header:
   image: /assets/images/someday_banner.png
   teaser: /assets/images/someday_profile.png

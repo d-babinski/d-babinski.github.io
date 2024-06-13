@@ -1,6 +1,7 @@
 ---
 title: "Blightsworn"
 excerpt: "Boss fight-centric game focused on melee combat and proper timing."
+date: "2022-03-10"
 header:
   image: /assets/images/blightsworn_banner.png
   teaser: /assets/images/blightsworn_profile.png

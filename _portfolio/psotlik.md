@@ -1,6 +1,7 @@
 ---
 title: "Psotlik"
 excerpt: "Pixelart ghibli inspired soulslike"
+date: "2024-01-15"
 header:
   teaser: /assets/images/psotlik_profile.png
 sidebar:

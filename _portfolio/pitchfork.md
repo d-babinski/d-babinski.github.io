@@ -1,6 +1,7 @@
 ---
 title: "Pitchfork of Destiny"
 excerpt: "Popup clicker under the hood of RPG."
+date: "2020-08-10"
 header:
   image: /assets/images/pitchfork_banner.gif
   teaser: /assets/images/pitchfork_banner.gif
