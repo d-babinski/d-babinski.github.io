@@ -4,6 +4,11 @@ excerpt: "Non-pixel perfect wind shader"
 date: "2023-12-01"
 header:
   teaser: /assets/images/shaders/swaying_grass/banner.png
+sidebar:
+  - title: "Shader Type"
+    text: "Shadergraph"
+  - title: "Additional tags"
+    text: "vertex, uv, sinwave"
 gallery:
 ---
 
@@ -16,12 +21,10 @@ Here's how I made this in shadergraph:
 ![Shadergraph](../../assets/images/shaders/swaying_grass/swaying_grass_shadergraph.png)
 
 
-
-
 Here's how it looks in isolation:
 
 <video controls src="../../assets/images/shaders/swaying_grass/single_grass.mp4" title="Title" width=500 height=360></video>
 
-And in practice:
+And in practice (look at the grass):
 
 <video controls src="../../assets/images/shaders/swaying_grass/grass_in_mountains.mp4" title="Title" width=500 height=360></video>

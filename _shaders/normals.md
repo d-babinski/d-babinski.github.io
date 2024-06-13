@@ -1,21 +1,21 @@
 ---
-title: "Physical Based Rendering"
-excerpt: "Implementing various BRDFs"
-date: "2024-05-19"
+title: "Roughness, normal maps and detail normals"
+excerpt: "Bumps without height maps"
+date: "2024-05-29"
 classes: wide
 sidebar:
-  title: "Shader Type"
-  text: "HLSL"
-  title: "Additional tags"
-  text: "pbr, physical based rendering"
+  - title: "Shader Type"
+    text: "HLSL"
+  - title: "Additional tags"
+    text: "roughness, normal map, detail normal map, bump scale"
 header:
-  teaser: /assets/images/shaders/hlsl/pbr.png
+  teaser: /assets/images/shaders/hlsl/roughness.png
 gallery:
----              
+---
 
-Upgraded previous shader to allow for detail maps and their normals, aswell as normal maps. Example material looks like this:
+Upgraded previous shader to allow for detail maps and their normals, aswell as normal maps and their bumpscales. Example material looks like this:
 
-![Shader](../../assets/images/shaders/hlsl/pbr.png)
+![Shader](../../assets/images/shaders/hlsl/roughness.png)
 
 
 

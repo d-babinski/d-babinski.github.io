@@ -6,15 +6,16 @@ header:
   teaser: /assets/images/shaders/trees/banner.png
 gallery:
 ---
-Simple uv based image scaling to achieve a certain amount of pixels, used later to make realistic movement for cloth moved by wind.
+Color based leaves movement, focusing on darkest colors the most (as theyre the ones most affected) by wind.
 
 Here's how I made this in shadergraph:
 
 ![Shadergraph](../../assets/images/shaders/trees/shadergraph.png)
 
-Here's how it looks when changing the resolution:
-
+Raw:
 <video controls src="../../assets/images/shaders/trees/trees.mp4" title="Title" width=500 height=360></video>
+
+Gameplay (focus on the trees):
 
 <video controls src="../../assets/images/shaders/swaying_grass/grass_in_mountains.mp4" title="Title" width=500 height=360></video>
 

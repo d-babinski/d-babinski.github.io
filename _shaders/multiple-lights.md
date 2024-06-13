@@ -13,7 +13,7 @@ header:
 gallery:
 ---              
 
-Upgraded previous shader to allow for detail maps and their normals, aswell as normal maps. Example material looks like this:
+Moved previous shader for single light into its own cginc file, and modified it to allow for multiple lights including directionals, cookies, vertex and harmonic lights for all lights exceeding the realtime light limit on current quality settings, aswell as working point and spot lights with and without cookies.
 
 ![Shader](../../assets/images/shaders/hlsl/multiple-lights.png)
 
@@ -28,114 +28,100 @@ CustomLight.cginc
 
 
 float4    _Tint;
-sampler2D _MainTex, _DetailTex;
-float4    _MainTex_ST, _DetailTex_ST;
+sampler2D _MainTex;
+float4    _MainTex_ST;
 float     _Smoothness;
 float     _Metallic;
-sampler2D _NormalMap, _DetailNormalMap;
-float     _BumpScale, _DetailBumpScale;
 
 struct Interpolators {
-	float4 position : SV_POSITION;
-	float4 uv : TEXCOORD0;
-	float3 normal : TEXCOORD1;
-	float3 worldpos : TEXCOORD2;
-
-	#if defined(VERTEXLIGHT_ON)
+    float4 position : SV_POSITION;
+    float2 uv : TEXCOORD0;
+    float3 normal : TEXCOORD1;
+    float3 worldpos : TEXCOORD2;
+    
+    #if defined(VERTEXLIGHT_ON)
         float3 vertexLightColor : TEXCOORD3;
-	#endif
+    #endif
 };
 
 struct VertexData {
-	float4 position : POSITION;
-	float3 normal : NORMAL;
-	float2 uv : TEXCOORD0;
+    float4 position : POSITION;
+    float3 normal : NORMAL;
+    float2 uv : TEXCOORD0;
 };
 
-void ComputeVertexLightColor(inout Interpolators i)
+void ComputeVertexLightColor (inout Interpolators i)
 {
-	#if defined(VERTEXLIGHT_ON)
+    #if defined(VERTEXLIGHT_ON)
         i.vertexLightColor = Shade4PointLights(
             unity_4LightPosX0, unity_4LightPosY0, unity_4LightPosZ0,
             unity_LightColor[0].rgb, unity_LightColor[1].rgb,
             unity_LightColor[2].rgb, unity_LightColor[3].rgb,
             unity_4LightAtten0, i.worldpos, i.normal
         );
-	#endif
+    #endif
 }
 
 Interpolators Vert(VertexData v)
 {
-	Interpolators i;
-	i.uv.xy = TRANSFORM_TEX(v.uv, _MainTex);
-	i.uv.zw = TRANSFORM_TEX(v.uv, _DetailTex);
-	i.position = UnityObjectToClipPos(v.position);
-	i.worldpos = mul(unity_ObjectToWorld, v.position);
-	i.normal = UnityObjectToWorldNormal(v.normal);
+    Interpolators i;
+    i.uv = TRANSFORM_TEX(v.uv, _MainTex);
+    i.position = UnityObjectToClipPos(v.position);
+    i.worldpos = mul(unity_ObjectToWorld, v.position);
+    i.normal = UnityObjectToWorldNormal(v.normal);
 
-	ComputeVertexLightColor(i);
+    ComputeVertexLightColor(i);
 
-	return i;
+    return i;
 }
 
 UnityLight Light(Interpolators i)
 {
-	UnityLight light;
-	#if defined(POINT) || defined(SPOT) || defined(POINT_COOKIE)
+    UnityLight light;
+    #if defined(POINT) || defined(SPOT) || defined(POINT_COOKIE)
         light.dir = normalize(_WorldSpaceLightPos0.xyz - i.worldpos);
-	#else
-	light.dir = _WorldSpaceLightPos0.xyz;
-	#endif
+    #else
+        light.dir = _WorldSpaceLightPos0.xyz;
+    #endif
 
-	UNITY_LIGHT_ATTENUATION(attenuation, 0., i.worldpos);
-	light.color = _LightColor0.rgb * attenuation;
-	light.ndotl = DotClamped(i.normal, light.dir);
-	return light;
+    UNITY_LIGHT_ATTENUATION(attenuation,0.,i.worldpos);
+    light.color = _LightColor0.rgb * attenuation;
+    light.ndotl = DotClamped(i.normal, light.dir);
+    return light;
 }
 
 UnityIndirect CreateIndirectLight(Interpolators i)
 {
-	UnityIndirect indirectLight;
-	indirectLight.diffuse = 0;
-	indirectLight.specular = 0;
+    UnityIndirect indirectLight;
+    indirectLight.diffuse = 0;
+    indirectLight.specular = 0;
 
-	#if defined(VERTEXLIGHT_ON)
+    #if defined(VERTEXLIGHT_ON)
         indirectLight.diffuse = i.vertexLightColor; 
-	#endif
+    #endif
 
-	#if defined(FORWARD_BASE_PASS)
-	indirectLight.diffuse += max(0, ShadeSH9(float4(i.normal, 1)));
-	#endif
-
-	return indirectLight;
-}
-
-void InitializeFragmentNormal(inout Interpolators i)
-{
-	float3 _normal =  UnpackScaleNormal(tex2D(_NormalMap, i.uv.xy), _BumpScale);
-	float3 _detailNormal =  UnpackScaleNormal(tex2D(_DetailNormalMap, i.uv.zw), _DetailBumpScale);
-	i.normal = (_normal + _detailNormal) * 0.5;
-	i.normal = i.normal.xzy;
-	i.normal = normalize(i.normal);
+    #if defined(FORWARD_BASE_PASS)
+        indirectLight.diffuse += max(0, ShadeSH9(float4(i.normal, 1)));
+    #endif
+    
+    return indirectLight;
 }
 
 float4 Frag(Interpolators i) : SV_TARGET
 {
-	InitializeFragmentNormal(i);
-	float3 viewDir = normalize(_WorldSpaceCameraPos - i.worldpos);
-	float3 albedo = tex2D(_MainTex, i.uv.xy).rgb * _Tint.rgb;
-	albedo *= tex2D(_DetailTex, i.uv.zw) * unity_ColorSpaceDouble;
-
-	float3 specularTint;
-	float  oneMinusReflectivity = 1 - _Metallic;
-	albedo = DiffuseAndSpecularFromMetallic(albedo, _Metallic, specularTint, oneMinusReflectivity);
-
-	return UNITY_BRDF_PBS(albedo, specularTint, oneMinusReflectivity, _Smoothness, i.normal, viewDir, Light(i), CreateIndirectLight(i));
+    i.normal = normalize(i.normal);
+    float3 viewDir = normalize(_WorldSpaceCameraPos - i.worldpos);
+    float3 albedo = tex2D(_MainTex, i.uv).rgb * _Tint.rgb;
+    float3 specularTint;
+    float  oneMinusReflectivity = 1 - _Metallic;
+    albedo = DiffuseAndSpecularFromMetallic(albedo, _Metallic, specularTint, oneMinusReflectivity); 
+    
+    return UNITY_BRDF_PBS(albedo, specularTint, oneMinusReflectivity, _Smoothness, i.normal, viewDir, Light(i), CreateIndirectLight(i));
 }
 
 
-#endif
 
+#endif
 ```
 
 Shader file:
@@ -144,19 +130,14 @@ Shader file:
 
 // Upgrade NOTE: replaced 'mul(UNITY_MATRIX_MVP,*)' with 'UnityObjectToClipPos(*)'
 
-Shader "Custom/Roughness Shader"
+Shader "Custom/Multiple Lights Shader"
 {
     Properties
     {
         _Tint ("Tint", Color) = (1.,1.,1.,1.)
-        _MainTex("Albedo", 2D) = "white" {}
-        [NoScaleOffset] _NormalMap ("Normals", 2D) = "bump" {}
+        _MainTex("Albedo", 2D) = "White" {}
         [Gamma] _Metallic("Metallic", Range(0,1)) = 0.
-        _BumpScale("Bump Scale", Float) = 1.
         _Smoothness("Smoothness", Range(0,1)) = .5
-        _DetailTex("Detail Texture", 2D) = "gray"{}
-        [NoScaleOffset] _DetailNormalMap ("Detail Normal Map", 2D) = "bump" {}
-        _DetailBumpScale ("Details Bump Scale", Float) = 1. 
     }    
     
     SubShader

@@ -4,17 +4,25 @@ excerpt: "Making cloth move"
 date: "2024-03-10"
 header:
   teaser: /assets/images/shaders/wind/banner.png
+sidebar:
+  - title: "Shader Type"
+    text: "Shadergraph"
+  - title: "Additional tags"
+    text: "wind, sinwave, pixelperfect"
 gallery:
 ---
-Simple uv based image scaling to achieve a certain amount of pixels, used later to make realistic movement for cloth moved by wind.
+
+Pixel perfect wind shader for strays of cloths. Allowing for attachement point and scaling the movement of the sinwave by the distance from attachement point.
 
 Here's how I made this in shadergraph:
 
 ![Shadergraph](../../assets/images/shaders/offset/shadergraph.png)
 
-Here's how it looks when changing the resolution:
+In isolation:
 
 <video controls src="../../assets/images/shaders/wind/wind.mp4" title="Title" width=500 height=360></video>
+
+In gameplay(notice the attached string):  
 
 <video controls src="../../assets/images/shaders/wind/gameplay.mp4" title="Title" width=500 height=360></video>
 
