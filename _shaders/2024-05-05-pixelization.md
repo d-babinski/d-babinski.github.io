@@ -1,6 +1,7 @@
 ---
 title: "Pixelization"
 excerpt: "Making stuff pixel perfect"
+date: "2023-11-29"
 header:
   teaser: /assets/images/shaders/pixelization/banner.png
 gallery:

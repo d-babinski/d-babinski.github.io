@@ -1,5 +1,6 @@
 ---
 title: "Fear Effect Reinvented"
+layout: single
 excerpt: "3rd person puzzle FPS, commercialy at Megapixel Studio."
 header:
   teaser: /assets/images/fear_profile.png
