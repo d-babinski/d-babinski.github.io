@@ -1,7 +1,7 @@
 ---
 title: "Vertex grass sway"
 excerpt: "Non-pixel perfect wind shader"
-date: "2024-12-01"
+date: "2023-12-01"
 header:
   teaser: /assets/images/shaders/swaying_grass/banner.png
 gallery:
