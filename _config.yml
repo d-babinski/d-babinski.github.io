@@ -111,7 +111,7 @@ analytics:
 # Site Author
 author:
   name             : "Dominik Babiński "
-  avatar           : "/assets/images/linkedin_profile_image.jfif"
+  #avatar           : #"/assets/images/linkedin_profile_image.jfif"
   bio              : "Computer Science graduate at Wrocław University of Science.\n\n
 
   Gamedev since 2019, professionaly since early 2021.\n
@@ -326,13 +326,13 @@ defaults:
     
   #toolsandsystems
   - scope:
-    path: ""
-    type: tools-and-systems
-  values:
-    layout: single
-    author_profile: false
-    related: true
-    share: true  
+      path: ""
+      type: tools-and-systems
+    values:
+      layout: single
+      author_profile: false
+      related: true
+      share: true  
 
 
 
