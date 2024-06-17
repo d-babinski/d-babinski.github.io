@@ -10,3 +10,5 @@ entries_layout: grid
 classes: wide
 author_profile: true
 ---
+
+Here are most of my projects I've participated in. The most important one is Fear Effect Reinvented, 3rd person horror puzzle/shooter game.

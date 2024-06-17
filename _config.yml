@@ -323,11 +323,11 @@ defaults:
       author_profile: false
       related: true
       share: true
-    
-  #toolsandsystems
+      
+  #programming
   - scope:
       path: ""
-      type: tools-and-systems
+      type: programming
     values:
       layout: single
       author_profile: false
@@ -347,6 +347,6 @@ collections:
   systems:
     output: true
     permalink: /:collection/:path/
-  tools-and-systems:
+  programming:
     output: true
     permalink: /:collection/:path/

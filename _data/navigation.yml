@@ -8,9 +8,11 @@ main:
   #   url: /year-archive/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  - title: "Projects" 
+  - title: "Games" 
     url: /
   - title: "Shaders"
     url: /shaders/
+  - title: "Programing"
+    url: /programming/
   #- title: "Systems"
   #  url: /systems/
