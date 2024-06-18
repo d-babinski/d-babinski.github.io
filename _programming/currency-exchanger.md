@@ -9,6 +9,8 @@ sidebar:
     text: "Python"
   - title: "Additional tags"
     text: "Cypress, Django, Celery, Sentry, Poetry, Kubernates, Docker"
+  - title: "Repository"
+    text: https://github.com/norbertcyran/currency-exchanger
 gallery:
 ---
 
